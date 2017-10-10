@@ -1,0 +1,9 @@
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\bin\Debug\sudokuSolver.exe.config
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\bin\Debug\sudokuSolver.exe
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\bin\Debug\sudokuSolver.pdb
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\obj\Debug\sudokuSolver.csprojResolveAssemblyReference.cache
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\obj\Debug\sudokuSolver.Form1.resources
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\obj\Debug\sudokuSolver.Properties.Resources.resources
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\obj\Debug\sudokuSolver.csproj.GenerateResource.Cache
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\obj\Debug\sudokuSolver.exe
+c:\users\liam\documents\visual studio 2017\Projects\sudokuSolver\sudokuSolver\obj\Debug\sudokuSolver.pdb
