@@ -23,7 +23,6 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			this.btnNewGame = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -38,16 +37,6 @@
 			this.inputText = new System.Windows.Forms.TextBox();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// btnNewGame
-			// 
-			this.btnNewGame.Location = new System.Drawing.Point(550, 50);
-			this.btnNewGame.Name = "btnNewGame";
-			this.btnNewGame.Size = new System.Drawing.Size(75, 23);
-			this.btnNewGame.TabIndex = 0;
-			this.btnNewGame.Text = "New Game";
-			this.btnNewGame.UseVisualStyleBackColor = true;
-			this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
 			// 
 			// label1
 			// 
@@ -89,21 +78,21 @@
 			// newGameToolStripMenuItem
 			// 
 			this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-			this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
 			this.newGameToolStripMenuItem.Text = "New Game";
 			this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
 			// 
 			// loadToolStripMenuItem
 			// 
 			this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-			this.loadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.loadToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
 			this.loadToolStripMenuItem.Text = "Load";
 			this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
 			// 
@@ -120,21 +109,21 @@
 			// easyToolStripMenuItem
 			// 
 			this.easyToolStripMenuItem.Name = "easyToolStripMenuItem";
-			this.easyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.easyToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
 			this.easyToolStripMenuItem.Text = "Easy";
 			this.easyToolStripMenuItem.Click += new System.EventHandler(this.easyToolStripMenuItem_Click);
 			// 
 			// mediumToolStripMenuItem
 			// 
 			this.mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
-			this.mediumToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.mediumToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
 			this.mediumToolStripMenuItem.Text = "Medium";
 			this.mediumToolStripMenuItem.Click += new System.EventHandler(this.mediumToolStripMenuItem_Click);
 			// 
 			// hardToolStripMenuItem
 			// 
 			this.hardToolStripMenuItem.Name = "hardToolStripMenuItem";
-			this.hardToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.hardToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
 			this.hardToolStripMenuItem.Text = "Hard";
 			this.hardToolStripMenuItem.Click += new System.EventHandler(this.hardToolStripMenuItem_Click);
 			// 
@@ -154,7 +143,6 @@
 			this.Controls.Add(this.inputText);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.btnNewGame);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form1";
@@ -168,8 +156,6 @@
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Button btnNewGame;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.MenuStrip menuStrip1;

@@ -27,9 +27,6 @@ namespace sudokuSolver {
 			setUpBoard();
 		}
 
-		private void btnNewGame_Click(object sender, EventArgs e) {
-			newGame();
-		}
 
 		private void newGame() {
 			resetBoard();

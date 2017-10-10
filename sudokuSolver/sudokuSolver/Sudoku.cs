@@ -11,7 +11,7 @@ namespace sudokuSolver {
 
 		public Sudoku() {
 			int[,] grid2 = new int[9, 9];
-			string s;
+			//string s;
 		}
 
 		void Init(ref int[,] grid2) {
@@ -58,7 +58,6 @@ namespace sudokuSolver {
 			}
 			_s = s;
 			return s;
-			s = "";
 		}
 
 		public void ChageTwoCell(ref int[,] grid2, int findValue1, int findValue2) {
