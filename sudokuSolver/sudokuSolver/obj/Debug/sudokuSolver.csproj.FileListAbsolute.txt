@@ -21,6 +21,7 @@ Z:/Users/Liam/Documents/github/Sudoku/sudokuSolver/sudokuSolver/obj/Debug/sudoku
 /Users/carlosguzman/Projects/sudokuSolver/sudokuSolver/bin/Debug/sudokuSolver.pdb
 /Users/carlosguzman/Projects/sudokuSolver/sudokuSolver/bin/Debug/nunit.framework.dll
 /Users/carlosguzman/Projects/sudokuSolver/sudokuSolver/bin/Debug/nunit.framework.xml
+/Users/carlosguzman/Projects/sudokuSolver/sudokuSolver/obj/Debug/sudokuSolver.csprojResolveAssemblyReference.cache
 /Users/carlosguzman/Projects/sudokuSolver/sudokuSolver/obj/Debug/sudokuSolver.Form1.resources
 /Users/carlosguzman/Projects/sudokuSolver/sudokuSolver/obj/Debug/sudokuSolver.Properties.Resources.resources
 /Users/carlosguzman/Projects/sudokuSolver/sudokuSolver/obj/Debug/sudokuSolver.csproj.GenerateResource.Cache
