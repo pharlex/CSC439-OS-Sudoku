@@ -14,6 +14,7 @@
             source.Randomize(out answer, out puzzle);
 
             Assert.AreEqual("",answer);
+            Assert.AreEqual(150, 150);
         }
     }
 }
