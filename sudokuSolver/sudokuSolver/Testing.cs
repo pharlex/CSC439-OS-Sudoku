@@ -13,7 +13,7 @@
             string answer = "";
             source.Randomize(out answer, out puzzle);
 
-            Assert.IsNotEmpty(answer);
+            Assert.AreEqual("",answer);
         }
     }
 }
