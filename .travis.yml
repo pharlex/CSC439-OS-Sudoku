@@ -5,4 +5,4 @@ before_install:
 before_script:
   - nuget restore sudokuSolver/sudokuSolver.sln
 after_script:
-  - nunit-console Tests/bin/Release/Tests.dll
+  - nunit-console sudokuSolver/packages/NUNIT.3.8.1/lib/net20/nunit.framework.dll
