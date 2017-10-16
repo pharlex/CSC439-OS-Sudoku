@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace sudokuSolver {
-	class Sudoku {
+	public class Sudoku {
 		static int[,] grid2 = new int[9, 9];
 		static string s;
 
