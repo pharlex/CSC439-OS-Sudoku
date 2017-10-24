@@ -97,10 +97,26 @@ namespace sudokuSolver {
 			// Draw(ref grid2, out output);
 			s = "";
 			s = Draw(ref grid2, out answer);
-			// above is getting the string  
-			//below is randomly adding 0's to the string for the user to solve 
-			int numReplace = 49;
-			int replacedAmt = 0;
+            // above is getting the string  
+            //below is randomly adding 0's to the string for the user to solve 
+            int numReplace = 0;
+            if (Form1.easy == true)
+            {
+                numReplace = 29;
+            }
+            else if (Form1.medium == true)
+            {
+                numReplace = 39;
+            }
+            else if (Form1.hard == true)
+            {
+                numReplace = 49;
+            }
+            else
+            {
+                numReplace = 0;
+            }
+            int replacedAmt = 0;
 			while (replacedAmt != numReplace) {
 				Random rand = new Random(DateTime.Now.Millisecond);
 				int replaceInt = rand.Next(1, 81);

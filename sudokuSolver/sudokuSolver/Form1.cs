@@ -10,7 +10,9 @@ using System.Windows.Forms;
 
 namespace sudokuSolver {
 	public partial class Form1 : Form {
-		string puzzle, answer;
+        public static bool easy, medium, hard;
+
+        string puzzle, answer;
 		const int cColWidth = 45;
 		const int cRowHeigth = 45;
 		const int cMaxCell = 9;
@@ -108,43 +110,88 @@ namespace sudokuSolver {
 			Application.Exit();
 		}
 
-		private void easyToolStripMenuItem_Click(object sender, EventArgs e) {
-			if (mediumToolStripMenuItem.Checked == true) {
-				mediumToolStripMenuItem.Checked = false;
-				easyToolStripMenuItem.Checked = !easyToolStripMenuItem.Checked;
-			} else if (hardToolStripMenuItem.Checked == true) {
-				hardToolStripMenuItem.Checked = false;
-				easyToolStripMenuItem.Checked = !easyToolStripMenuItem.Checked;
-			} else {
-				easyToolStripMenuItem.Checked = !easyToolStripMenuItem.Checked;
-			}
-		}
+        public void easyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (mediumToolStripMenuItem.Checked == true)
+            {
+                mediumToolStripMenuItem.Checked = false;
+                easy = true;
+                medium = false;
+                hard = false;
+                easyToolStripMenuItem.Checked = !easyToolStripMenuItem.Checked;
+            }
+            else if (hardToolStripMenuItem.Checked == true)
+            {
+                hardToolStripMenuItem.Checked = false;
+                easyToolStripMenuItem.Checked = !easyToolStripMenuItem.Checked;
+                easy = true;
+                medium = false;
+                hard = false;
+            }
+            else
+            {
+                easyToolStripMenuItem.Checked = !easyToolStripMenuItem.Checked;
+                easy = true;
+                medium = false;
+                hard = false;
+            }
+        }
 
-		private void mediumToolStripMenuItem_Click(object sender, EventArgs e) {
-			if (easyToolStripMenuItem.Checked == true) {
-				easyToolStripMenuItem.Checked = false;
-				mediumToolStripMenuItem.Checked = !mediumToolStripMenuItem.Checked;
-			} else if (hardToolStripMenuItem.Checked == true) {
-				hardToolStripMenuItem.Checked = false;
-				mediumToolStripMenuItem.Checked = !mediumToolStripMenuItem.Checked;
-			} else {
-				mediumToolStripMenuItem.Checked = !mediumToolStripMenuItem.Checked;
-			}
-		}
+        private void mediumToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (easyToolStripMenuItem.Checked == true)
+            {
+                easyToolStripMenuItem.Checked = false;
+                mediumToolStripMenuItem.Checked = !mediumToolStripMenuItem.Checked;
+                easy = false;
+                medium = true;
+                hard = false;
+            }
+            else if (hardToolStripMenuItem.Checked == true)
+            {
+                hardToolStripMenuItem.Checked = false;
+                mediumToolStripMenuItem.Checked = !mediumToolStripMenuItem.Checked;
+                easy = false;
+                medium = true;
+                hard = false;
+            }
+            else
+            {
+                mediumToolStripMenuItem.Checked = !mediumToolStripMenuItem.Checked;
+                easy = false;
+                medium = true;
+                hard = false;
+            }
+        }
 
-		private void hardToolStripMenuItem_Click(object sender, EventArgs e) {
-			if (mediumToolStripMenuItem.Checked == true) {
-				mediumToolStripMenuItem.Checked = false;
-				hardToolStripMenuItem.Checked = !hardToolStripMenuItem.Checked;
-			} else if (easyToolStripMenuItem.Checked == true) {
-				easyToolStripMenuItem.Checked = false;
-				hardToolStripMenuItem.Checked = !hardToolStripMenuItem.Checked;
-			} else {
-				hardToolStripMenuItem.Checked = !hardToolStripMenuItem.Checked;
-			}
-		}
+        private void hardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (mediumToolStripMenuItem.Checked == true)
+            {
+                mediumToolStripMenuItem.Checked = false;
+                hardToolStripMenuItem.Checked = !hardToolStripMenuItem.Checked;
+                easy = false;
+                medium = false;
+                hard = true;
+            }
+            else if (easyToolStripMenuItem.Checked == true)
+            {
+                easyToolStripMenuItem.Checked = false;
+                hardToolStripMenuItem.Checked = !hardToolStripMenuItem.Checked;
+                easy = false;
+                medium = false;
+                hard = true;
+            }
+            else
+            {
+                hardToolStripMenuItem.Checked = !hardToolStripMenuItem.Checked;
+                easy = false;
+                medium = false;
+                hard = true;
+            }
+        }
 
-		private void loadToolStripMenuItem_Click(object sender, EventArgs e) {
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e) {
 			MessageBox.Show(this.inputText.Text);
 		}
 
